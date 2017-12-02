@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Help</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="ui left vertical inverted sidebar labeled icon menu" id="sb" >
+		<a class="item" href="Book.html">
+			<i class="large train icon"></i>
+			Book Ticket
+		</a>
+		<a class="item" href="FinalTickets.html">
+			<i class="large ticket icon"></i>
+			Tickets
+		</a>
+		<a class="item" href="BoardingConfirmation.html">
+			<i class="large anchor icon"></i>
+			Boarding Stat.
+		</a>
+		<a class="item" href="Cleaningreq.html">
+			<i class="large shower icon"></i>
+			Cleaning Req.
+		</a>
+		<a class="item" href="Foodbooking.html">
+			<i class="large lemon icon"></i>
+			Food Booking
+		</a>
+		<a class="item" href="Emergency.html">
+			<i class="large emergency icon"></i>
+			Emergency
+		</a>
+		<a class="item" href="Tracking.html">
+			<i class="large hourglass empty icon"></i>
+			Track
+		</a>
+		<a class="active item" href="Help.html">
+			<i class="large help icon"></i>
+			Help
+		</a>
+		<a class="item" href="About.html">
+			<i class="large info icon"></i>
+			About Us
+		</a>
+	</div>
+	<div class="ui top fixed secondary pointing menu" style="background:#00766c;">
+		<a id="toggle" class="item">
+		<i class="big sidebar icon" style="color: white;"></i>
+		</a>
+		<a class="item">
+			<p style="font-family: 'Amaranth', sans-serif; font-size: 22px; color:white; ">Indian Railways</p>
+		</a>
+		<div class="right menu">
+			  <div class="ui dropdown icon item" id="dpicon">
+				<i class="large user circle outline icon" style="color:white;"></i>
+				<div class="menu">
+					<div class="item"><a href="index.html">Logout</a></div>
+					<div class="item">Account Settings</div>
+				</div><!--end of menu of dropdown-->
+			</div> <!--end of ui dropdown icon item-->
+			<a class="item" style="color:white;">
+				<i class="large github icon"></i>
+			</a>
+			<a class="item" style="color:white;">
+				<i class="large info circle icon"></i>
+			</a>
+		</div>
+	</div><!--End of sidebar and topbar-->
+<div class="pusher">
+		<div class="ui grid">
+		<div class="sixteen wide column" style="margin-top: 60px;">
+		<div class="ui raised teal segment container" id="book">
+			<h3>Ticket Reservation</h3>
+			<p>
+				
+	1. After successful logging in go to the Main Menu, <i class="sidebar icon"></i> (Side Bar Button) at the left of your portal. <br><br>
+	2. Select the "Book Ticket" option i.e. second in the list.<br><br>
+	3. Fill the form at the left side of the portal and click the "GO" button.<br><br>
+	4. Select the seat preference in the desired train.<br><br>
+	5. Write the Aadhaar number in the box provided and select the seat preference.<br><br>
+	6. Enter the OTP send to the mobile numbers linked with the Aadhaar Number.<br><br>
+	7. After verification from the UIDAI you will be forwarded.<br><br>
+	<h4>To the payment gateway.</h4>
+	* Do the transaction and you will be forwarded to the final ticket.
+            </p>
+		</div><!--end of -->
+		<div class="ui raised teal segment container" id="tickets">
+			<h3>Tickets</h3>
+			<p>
+			1. Go to the Main Menu,<i class="sidebar icon"></i> (Side Bar Button) at the left of your portal. <br><br>
+			2. Select the "Tickets" option <i class="sidebar icon"></i>, the 2nd option from the top. <br><br>
+			3. Click the desired option amongst the three. <br><br>
+			4. Select a particular transaction to get the more details. <br><br>
+			</p>
+		</div><!--end of -->
+		<div class="ui raised teal segment container" id="boardstat">
+			<h3>Boarding Confirmation</h3>
+			<p>
+			1. Go to the Main Menu,<i class="sidebar icon"></i> (Side Bar Button) at the left of your portal. <br><br>
+			2. Select "Boarding Stat." option <i class="sidebar icon"></i>, the 3rd option from the top. <br><br>
+			3. Select your PNR Number from the "Drop Down Menu". <br><br>
+			4. Press "GO" button. <br><br>
+			5. Details of all the passengers will come in a list (subject to the terms and conditions). <br><br>
+			6. Select the checkbox the passengers who are boarding on the train. <br><br>
+			7. Select the checkbox "I agree the details provided above are true and real". <br><br>
+			8. Click on the button "Confirm Boarding status". <br><br>
+			9. A confirmation message will come on the screen and you are done. <br><br>
+			</p>
+		</div><!--end of -->
+		<div class="ui raised teal segment container" id="clnreq">
+			<h3>Maintainance</h3>
+			<p>
+			1. Go to the Main Menu, <i class="sidebar icon"></i> (Side Bar Button) at the left of your portal.<br><br>
+			2. Select "Cleaning Req." option <i class="sidebar icon"></i>, the 4th option from the top.<br><br>
+			3. Fill the required columns.<br><br>
+			4. Click on Submit to post your request.<br><br>
+			</p>
+		</div><!--end of -->
+		<div class="ui raised teal segment container" id="fdbk">
+			<h3>Food Booking</h3>
+			<p>
+			1. After successful logging in go to the Main Menu, <i class="sidebar icon"></i>(Side Bar Button) at the left of your portal.<br><br>
+			2. Choose the category on the basis of which you wish to book food.<br><br>
+      		  2.1 &ensp;Search by station-<br><br>
+               	&ensp;&ensp;-Enter the station number or the name of the station you want your meal at.<br><br>
+               	&ensp;&ensp;-Book the meal above than the lowest transaction limit and checkout.<br><br>
+               	&ensp;&ensp;-Validate your PNR and confirm your order.<br><br>
+                &ensp;&ensp;-You will get the food on your seat on the booked station.<br><br>
+                &ensp;&ensp;-The payment will be cash on delivery.<br><br>
+            3. Search by PNR-<br><br>
+               &ensp;&ensp;-Enter your PNR number.<br><br>
+               &ensp;&ensp;-Choose the station from the drop down list.<br><br>
+               &ensp;&ensp;-Select the food you want.<br><br>
+               &ensp;&ensp;-Check out.               <br><br>
+            4. Search by train number and date-<br><br>
+               &ensp;&ensp;-Enter the train number and date of journey.<br><br>
+               &ensp;&ensp;-Select the station you wnat food at.<br><br>
+               &ensp;&ensp;-Validate PNR.<br><br>
+               &ensp;&ensp;-Check out.<br><br>
+
+			</p>
+		</div><!--end of -->
+		<div class="ui raised teal segment container" id="emer">
+			<h3>Emergency</h3>
+			<p>
+			1. Go to the Main Menu,<i class="sidebar icon"></i>  (Side Bar Button) at the left of your portal.<br><br>
+			2. Select "Emergency" option <i class="sidebar icon"></i> , the 6th option from the top.<br><br>
+			3. Select the PNR number, the emergency case and write the details (if yoy wish) and press "Emergency" button.<br><br>
+			4. You will be provided with the Emergency-help as soon as possible in running train (if possible otherwise on the next coming station).<br><br>
+
+			</p>
+		</div><!--end of -->	
+		<div class="ui raised teal segment container" id="track">
+			<h3>Train Tracking</h3>
+			<p>
+			1. Go to the Main Menu<i class="sidebar icon"></i> (Side Bar Button) at the left of your portal..<br><br>
+			2. Select "Track" option <i class="sidebar icon"></i>, the 7th option from the top..<br><br>
+			3. You will be provided with the details of the running train under your id..<br><br>
+			</p>
+		</div><!--end of -->
+		</div><!--end of sixteen wide column-->
+	</div><!--end of grid-->
+</div><!--end of pusher -->
+<script>
+	$('#toggle').click(function(){
+		$('#sb')
+  		.sidebar('setting', 'transition', 'scale down')
+  		.sidebar('toggle')
+	});
+</script>
+<script>
+	$('#dpicon')
+  .dropdown({
+    direction: 'downward'
+  })
+;
+</script>
+</body>
+<script>
+  function codeAddress() {
+	chatteron.init({
+	clientID: "e30e03799e02082e585604e421085ca4513c8764ade722f7",
+	themeColor       : "3295e6",
+	title            : "Chat here"
+  });
+}
+</script>
+<script src="http://web.chatteron.io/scripts/sdk.js" onload="codeAddress();">
+</script>
+</html>

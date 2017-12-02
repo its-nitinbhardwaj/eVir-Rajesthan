@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Evir-Home</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+	<link rel="'stylesheet" href="particle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet"> 
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+	    particlesJS.load('particles-js', 'particles.json', function(){
+      	console.log('particles.json loaded...');
+    	});
+   function mod(){
+   	$('#mbox')
+  .modal('show')
+;
+}
+	</script><!--end of particles json-->
+	<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({ scrollTop: 0}, 500);
+});
+	</script>
+
+<style type="text/css">
+	#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+</style>
+</head>
+<body>
+	<div class="ui fluid segment container" style="height: 700px; background:bckimg.jpg;">
+		<button onclick="mod()">Click Here</button>
+		<div class="ui raised segment container">
+			<div class="ui basic modal" id="mbox">
+  				<div class="ui icon header">
+   				 <i class="archive icon"></i>
+   				 Archive Old Messages
+  				</div>
+  				<div class="content">
+  		 <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
+ 		 </div>
+ 				 <div class="actions">
+   				 <div class="ui red basic cancel inverted button">
+   
+  		</div>
+			</div>
+		</div>
+	</div><!-- end of particle js grid -->
+	<div class="ui fluid raised segment container">
+	 <div class="ui grid">
+	 	<div class="twelve wide column"  style=" background-color: #00b0ff;">
+	 		<p style="font-size: 36px;font-family: 'Barlow Condensed', sans-serif;">Corruption Eradicator</p>
+		</div>
+		<div class="three wide column">
+		  	<img src="nocorruption.png" style="height: 220px;">
+		</div>
+	 </div>
+	</div>
+	<div class="ui fluid segment stacked container" style="height: 250px;">
+	 <div class="ui grid">
+	 	<div class="three wide column">
+	 		<img src="ticketicon.png" style="height: 220px;"></i>
+		</div>
+		<div class="twelve wide column" style=" background-color: #002171;">
+		  <div style="font-family: 'Barlow Condensed', sans-serif;">
+		  	<p style="font-size: 36px;">Error-free Reservation of tickets using Aadhaar data</p>
+		  </div>
+		</div>
+	 </div>
+	</div><!--end of detail 1 -->
+	<div class="ui fluid segment container" style="height: 250px;">
+	 <div class="ui grid">
+	 	<div class="thirteen wide column" style=" background-color: #00b0ff;">
+		  <div style="font-family: 'Barlow Condensed', sans-serif;">
+		  	<p style="font-size: 36px;">Track any train anywhere and anytime</p>
+		  </div>
+		</div>
+		<div class="three wide column">
+			<img src="trackingicon.png" style="height: 220px;"></i>
+		</div>
+	 </div>
+	</div><!--end of detaial 2-->
+	<div class="ui fluid segment container" style="height: 250px;">
+	 <div class="ui grid">
+	 	<div class="three wide column">
+	 		<img src="emergencyicon.png" style="height: 220px;"></i>
+		</div>
+		<div class="twelve wide column" style=" background-color: #002171;">
+		  <div style="font-family: 'Barlow Condensed', sans-serif;">
+		  	<p style="font-size: 36px;">Responsive to Emergency</p>
+		  </div>
+		</div>
+	 </div>
+	</div>
+	<div class="ui fluid segment container" style="height: 250px;">
+	 <div class="ui grid">
+	 	<div class="thirteen wide column">
+		  <div style="font-family: 'Barlow Condensed', sans-serif;">
+		  	<p style="font-size: 36px;">Maintainance Support</p>
+		  </div>
+		</div>
+		<div class="three wide column">
+			<img src="maintanceicon.png" style="height: 220px;"></i>
+		</div>
+	 </div>
+	</div>
+	<div class="ui fluid segment container" style="height: 250px;">
+	 <div class="ui grid">
+	 	<div class="three wide column">
+	 		<img src="foodicon.png" style="height: 220px;"></i>
+		</div>
+		<div class="twelve wide column">
+		  <div style="font-family: 'Barlow Condensed', sans-serif;">
+		  	<p style="font-size: 36px;">Book food with few clicks</p>
+		  </div>
+		</div>
+	 </div>
+	</div>
+	<div class="ui fluid segment container" style=""></div>
+	<!-- Return to Top -->
+<a href="javascript:" id="return-to-top" ><i class="huge caret up icon"></i></a>
+</body>
+</html>

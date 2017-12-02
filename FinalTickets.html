@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tickets</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div class="ui left vertical inverted sidebar labeled icon menu" id="sb" >
+		<a class="item" href="Book.html	">
+			<i class="large train icon"></i>
+			Book Ticket
+		</a>
+		<a class="active item" href="FinalTickets.html">
+			<i class="large ticket icon"></i>
+			Tickets
+		</a>
+		<a class="item" href="BoardingConfirmation.html">
+			<i class="large anchor icon"></i>
+			Boarding Stat.
+		</a>
+		<a class="item" href="Cleaningreq.html">
+			<i class="large shower icon"></i>
+			Cleaning Req.
+		</a>
+		<a class="item" href="Foodbooking.html">
+			<i class="large lemon icon"></i>
+			Food Booking
+		</a>
+		<a class="item" href="Emergency.html">
+			<i class="large emergency icon"></i>
+			Emergency
+		</a>
+		<a class="item" href="Tracking.html">
+			<i class="large hourglass empty icon"></i>
+			Track
+		</a>
+		<a class="item" href="Help.html">
+			<i class="large help icon"></i>
+			Help
+		</a>
+		<a class="item" href="About.html">
+			<i class="large info icon"></i>
+			About Us
+		</a>
+	</div>
+	<div class="ui top fixed secondary pointing menu" style="background:#00766c;">
+		<a id="toggle" class="item">
+		<i class="big sidebar icon" style="color: white;"></i>
+		</a>
+		<a class="item">
+			<p style="font-family: 'Amaranth', sans-serif; font-size: 22px; color:white; ">Indian Railways</p>
+		</a>
+		<div class="right menu">
+			  <div class="ui dropdown icon item" id="dpicon">
+				<i class="large user circle outline icon" style="color:white;"></i>
+				<div class="menu">
+					<div class="item"><a href="index.html">Logout</a></div>
+					<div class="item">Account Settings</div>
+				</div><!--end of menu of dropdown-->
+			</div> <!--end of ui dropdown icon item-->
+			<a class="item" style="color:white;">
+				<i class="large github icon"></i>
+			</a>
+			<a class="item" style="color:white;">
+				<i class="large info circle icon"></i>
+			</a>
+		</div>
+	</div>
+  	<div class="pusher">
+ <div class="ui grid" style="margin-top: 50px;">
+ <div class="fifteen column wide">
+	<div class="ui raised segment container">
+	<a class="ui red ribbon label">All Tickets Details</a>
+		<div class="ui top attached fluid tabular menu" id="tabmenu">
+			<a class="item active" data-tab="first" style="width: 366px; text-align: center;">Booked Tickets</a>
+			<a class="item" data-tab="second" style="width: 366px; text-align: center;">Cancelled Tickets</a>
+			<a class="item " data-tab="third" style="width: 366px; text-align: center;">All Transactions</a>
+		</div><!--End of ui top attached tabular menu-->
+
+		<div class="ui bottom attached tab segment" data-tab="first">
+				<table class="ui table">
+					<thead>
+						<tr>
+							<th>SNo.</th>
+							<th>PNR Number</th>
+							<th>Status</th>
+							<th>Booking Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+		</div> <!--ui bottom attached first tab segment-->
+
+		<div class="ui bottom attached tab segment" data-tab="second">
+			    <table class="ui table">
+			    	<thead>
+			    		<tr>
+							<th>SNo.</th>
+							<th>PNR Number</th>
+							<th>Cacellation Date</th>
+							<th>Booking Date</th>
+			    		</tr>
+			    	</thead>
+			    	<tbody>
+			    		
+			    	</tbody>
+			    </table>
+
+		</div> <!--ui bottom attached second tab segment-->
+
+		<div class="ui bottom attached tab segment" data-tab="third">
+			    <table class="ui table">
+			    	<thead>
+			    		<tr>
+							<th>SNo.</th>
+							<th>Transaction Number</th>
+							<th>Transaction for</th>
+							<th>Transaction Date</th>
+			    		</tr>
+			    	</thead>
+			    	<tbody>			    		
+			    	</tbody>
+			    </table>
+		</div>
+
+	</div>
+
+
+<script>
+	$('#toggle').click(function(){
+		$('#sb')
+  		.sidebar('setting', 'transition', 'scale down')
+  		.sidebar('toggle')
+	});
+</script>
+	<script type="text/javascript">
+		$('.menu .item')
+  			.tab()
+		;
+	</script>
+<script>
+	$('#dpicon')
+  .dropdown({
+    direction: 'downward'
+  })
+;
+</script>
+</body>
+<script>
+  function codeAddress() {
+	chatteron.init({
+	clientID: "e30e03799e02082e585604e421085ca4513c8764ade722f7",
+	themeColor       : "3295e6",
+	title            : "Chat here"
+  });
+}
+</script>
+<script src="http://web.chatteron.io/scripts/sdk.js" onload="codeAddress();">
+</script>
+</html>

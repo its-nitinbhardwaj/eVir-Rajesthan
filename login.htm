@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login/Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+   #fire-container{
+    background: grey;
+    border:black solid;
+   } 
+  </style>
+  <!--initalization from firebase code snippest-->
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_kfVSQ5JEixm8bjuCis-S4ulig_YI2DY",
+    authDomain: "qslam-6110d.firebaseapp.com",
+    databaseURL: "https://qslam-6110d.firebaseio.com",
+    projectId: "qslam-6110d",
+    storageBucket: "qslam-6110d.appspot.com",
+    messagingSenderId: "847402401176"
+  };
+  firebase.initializeApp(config);
+</script>
+<!--the code below initializes the signin widget from firebaseUI web-->
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: 'Book.html',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+
+
+</head>
+<body style="background-image: url('loginback.jpg');" >
+<div class="ui stacked segment container" style="background: transparent; margin-top: 60px; height: 500px; width: 300px;">
+  <a class="ui massive red ribbon label">Login or Sign Up</a><br><br><br><br>
+  <div class="fire-container">
+  <div id="firebaseui-auth-container"></div>
+  </div>
+</div>
+</body>
+<script>
+  function codeAddress() {
+  chatteron.init({
+  clientID: "e30e03799e02082e585604e421085ca4513c8764ade722f7",
+  themeColor       : "3295e6",
+  title            : "Chat here"
+  });
+}
+</script>
+<script src="http://web.chatteron.io/scripts/sdk.js" onload="codeAddress();">
+</script>
+</html>
